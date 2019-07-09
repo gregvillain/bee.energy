@@ -1,7 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  fetch('http://localhost:8000/current')
+  fetch('http://13.210.164.7:8000/current')
     .then(function(response) {
       response.text().then(function (text) {
           const json = JSON.parse(text);
