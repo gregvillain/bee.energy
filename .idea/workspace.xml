@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c974a319-ddf2-468b-bbd6-a15758aa0bb5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/freelancer.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/freelancer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="55" column="70" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="70" />
+            <state relative-caret-position="240">
+              <caret line="29" selection-start-line="29" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freelancer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="freelancer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/js/freelancer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="285">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Server.java" />
         <option value="$PROJECT_DIR$/src/frontend-2/index.html" />
         <option value="$PROJECT_DIR$/src/frontend-2/js/freelancer.js" />
-        <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/docs/js/freelancer.js" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -127,12 +127,6 @@
               <item name="GreenLight" type="b2602c69:ProjectViewProjectNode" />
               <item name="GreenLight" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreenLight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreenLight" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GreenLight" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562644563401</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="threshold = 100">
+      <created>1562644605620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562644605620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated energy feed url">
+      <created>1562645207735</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562645207735</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -334,7 +342,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="moved to docs" />
     <MESSAGE value="new avatars" />
-    <option name="LAST_COMMIT_MESSAGE" value="new avatars" />
+    <MESSAGE value="threshold = 100" />
+    <MESSAGE value="updated energy feed url" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated energy feed url" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class">
@@ -440,17 +450,17 @@
     <entry file="file://$PROJECT_DIR$/docs/img/avataaars.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
+    <entry file="file://$PROJECT_DIR$/docs/js/freelancer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="55" column="70" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="70" />
+        <state relative-caret-position="285">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/js/freelancer.js">
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="240">
+          <caret line="29" selection-start-line="29" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
     </entry>
