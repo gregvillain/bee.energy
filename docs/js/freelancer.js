@@ -8,7 +8,7 @@
           console.log("X: " + text);
           console.log(Number());
           let price = Math.round(json.spotPrice/10);
-          if(Number(json.spotPrice) > 20.0) {
+          if(Number(json.spotPrice) > 100.0) {
                 $("#energy-msg").text("Coal is burning! Please postpone.");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
