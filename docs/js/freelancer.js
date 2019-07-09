@@ -8,17 +8,19 @@
           console.log("X: " + text);
           console.log(Number());
           let price = Math.round(json.spotPrice/10);
-          if(Number(json.spotPrice) > 100.0) {
-                $("#energy-msg").text("Coal is burning, please postpone.");
+          if(Number(json.spotPrice) > 20.0) {
+                $("#energy-msg").text("Coal is burning! Please postpone.");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
+                $("#avatar").attr("src","img/scared.svg");
           } else {
                 let t = "Renewables going strong!";
-                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!"];
+                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
                 let m = t + " " + r[Math.round(100*Math.random()) % r.length];
                 $("#energy-msg").text(m);
                 $("#background").addClass("bg-primary");
                 $("#background").removeClass("bg-danger");
+                $("#avatar").attr("src","img/happy.svg");
           }
           $("#price").text("Current energy price is " + price + " cents per kWh.");
       });
