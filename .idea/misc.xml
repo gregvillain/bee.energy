@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../BinLogMunger" value="1449846108000" />
+        <entry key="$PROJECT_DIR$/../OperationDataFreedom" value="1448999911000" />
+        <entry key="$PROJECT_DIR$/../S3Scout" value="1449160129000" />
+        <entry key="$PROJECT_DIR$/../bayes-scala-gp" value="1462211965000" />
+        <entry key="$PROJECT_DIR$/../chomp-chomp" value="1443097550000" />
+        <entry key="$PROJECT_DIR$/../expedia" value="1461787378000" />
+        <entry key="$PROJECT_DIR$/../iwisps/wisps-ml" value="1474650180000" />
+        <entry key="$PROJECT_DIR$/../iwisps/wisps-service" value="1474650180000" />
+        <entry key="$PROJECT_DIR$/../kafka-storm-starter" value="2882408124000" />
+        <entry key="$PROJECT_DIR$/../my-perfect-weather" value="1450322065000" />
+        <entry key="$PROJECT_DIR$/../numerai/ai_spark_worker" value="1488886389000" />
+        <entry key="$PROJECT_DIR$/../numerai/spark-tsne" value="1488889808000" />
+        <entry key="$PROJECT_DIR$/../outbrain" value="1475791102000" />
+        <entry key="$PROJECT_DIR$/../scripts-business-intelligence" value="1474649537000" />
+        <entry key="$PROJECT_DIR$/../spark-chomp" value="1448057757000" />
+        <entry key="$USER_HOME$/workspace/GatlingTest" value="1497495395000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+</project>
