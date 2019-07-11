@@ -16,8 +16,9 @@
                 $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
           } else {
                 let t = "Renewables going strong!";
-                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
-                let m = t + " " + r[Math.round(100*Math.random()) % r.length];
+//                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
+//                let rMsg = r[Math.round(100*Math.random()) % r.length];
+                let m = t;// + " " + rMsg;
                 $("#energy-msg").text(m);
                 $("#background").addClass("bg-primary");
                 $("#background").removeClass("bg-danger");
