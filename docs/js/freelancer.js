@@ -16,17 +16,16 @@
                 $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
           } else {
                 let t = "Renewables going strong!";
-//                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
-//                let rMsg = r[Math.round(100*Math.random()) % r.length];
-                let m = t;// + " " + rMsg;
-                $("#energy-msg").text(m);
+                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
+                let rMsg = r[Math.round(100*Math.random()) % r.length];
+                $("#energy-msg1").text(t);
+                $("#energy-msg2").text(rMsg);
                 $("#background").addClass("bg-primary");
                 $("#background").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
           $("#price").text("Current energy price is " + price + " cents per kWh.");
       });
-
     });
 
   // Smooth scrolling using jQuery easing
