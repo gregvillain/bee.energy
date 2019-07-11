@@ -10722,6 +10722,10 @@ a.text-dark:hover, a.text-dark:focus {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+  #signupNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .masthead {
