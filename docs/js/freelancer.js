@@ -1,14 +1,12 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  fetch('http://13.210.164.7:8000/current')
+  fetch('http://52.62.107.78:8000/current')
     .then(function(response) {
       response.text().then(function (text) {
           const json = JSON.parse(text);
-          console.log("X: " + text);
-          console.log(Number());
           let price = Math.round(json.spotPrice/10);
-          if(Number(json.spotPrice) > 100.0) {
+          if(Number(json.spotPrice) > 80.0) {
                 $("#energy-msg").text("Coal is burning! Please postpone.");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
