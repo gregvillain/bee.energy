@@ -7,21 +7,32 @@
           const json = JSON.parse(text);
           let price = Math.round(json.spotPrice/10);
           const d = new Date();
-          const imgNo = d.getTime() % 2;
+          const imgNo = Math.round(100*Math.random()) % 2;
           if(Number(json.spotPrice) > 90.0) {
-                $("#energy-msg").text("Coal is burning! Please postpone.");
+                $("#energy-msg1").text("Coal is burning!");
+                $("#energy-msg2").text("Please postpone.");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
-                Date
+                $("#background1").removeClass("bg-primary");
+                $("#background1").addClass("bg-danger");
                 $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
           } else {
                 let t = "Renewables going strong!";
-                let r = ["Do your laundry!", "Iron your shirts!", "Get your dryer on!", "Make a cuppa!", "Get the vacuum going!"];
+                let r = [
+                    "Roast that chicken!",
+                    "Grill the veggies!",
+                    "Do your laundry!",
+                    "Iron your shirts!",
+                    "Dry your clothes!",
+                    "Make a cuppa!",
+                    "Vacuum the carpet!"];
                 let rMsg = r[Math.round(100*Math.random()) % r.length];
                 $("#energy-msg1").text(t);
                 $("#energy-msg2").text(rMsg);
                 $("#background").addClass("bg-primary");
                 $("#background").removeClass("bg-danger");
+                $("#background1").addClass("bg-primary");
+                $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
           $("#price").text("Current energy price is " + price + " cents per kWh.");
