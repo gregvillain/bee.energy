@@ -1,7 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  fetch('http://13.210.238.2:8000/current')
+  fetch('https://api.bee.energy:8000/current')
     .then(function(response) {
       response.text().then(function (text) {
           const json = JSON.parse(text);
