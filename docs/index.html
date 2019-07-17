@@ -37,8 +37,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
     <div class="container">
-        <img src="img/Bee_logo_white.png" width="15%" height="15%"/>
-      <!--<a class="navbar-brand js-scroll-trigger" href="#about">Empowering You</a>-->
+
+      <a class="navbar-brand js-scroll-trigger" href="#"><img src="img/Bee_logo_white.png" width="50%" height="50%"/></a>
 
         <button class="navbar-toggler text-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -48,6 +48,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">Our Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#you">What can you do</a>
                 </li>
             </ul>
         </div>
@@ -87,32 +90,6 @@
     </div>
   </header>
 
-  <!--&lt;!&ndash; Explainer Section &ndash;&gt;-->
-  <!--<section class="page-section bg-secondary text-white mb-0" id="explainer">-->
-      <!--<div class="container">-->
-
-          <!--&lt;!&ndash;&lt;!&ndash; About Section Heading &ndash;&gt;&ndash;&gt;-->
-          <!--&lt;!&ndash;<h2 class="page-section-heading text-center text-uppercase text-white">The Bee.Energy website</h2>&ndash;&gt;-->
-
-          <!--&lt;!&ndash;&lt;!&ndash; Icon Divider &ndash;&gt;&ndash;&gt;-->
-          <!--&lt;!&ndash;<div class="divider-custom divider-light">&ndash;&gt;-->
-              <!--&lt;!&ndash;<div class="divider-custom-line"></div>&ndash;&gt;-->
-              <!--&lt;!&ndash;<div class="divider-custom-icon">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<i class="fas fa-star"></i>&ndash;&gt;-->
-              <!--&lt;!&ndash;</div>&ndash;&gt;-->
-              <!--&lt;!&ndash;<div class="divider-custom-line"></div>&ndash;&gt;-->
-          <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-          <!--&lt;!&ndash; About Section Content &ndash;&gt;-->
-          <!--<div>-->
-              <!--<div>-->
-                  <!--<p class="lead text-center">Our website tells you when it’s the best time to consume power, or when it should be avoided. The panel above will be green when the price is low and the renewable energy mix is high, or red when the price is high and the renewable energy mix is low.</p>-->
-              <!--</div>-->
-              <!--<br/>-->
-          <!--</div>-->
-      <!--</div>-->
-  <!--</section>-->
-
   <!-- About Section -->
   <section class="page-section mb-0" id="about">
       <div class="container">
@@ -141,13 +118,112 @@
                   <br/>
                   <p class="lead text-right">Saving the world, one bee at a time...</p>
               </div>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
           </div>
       </div>
   </section>
+
+  <section class="page-section portfolio" id="you">
+      <div class="container">
+
+          <!-- Portfolio Section Heading -->
+          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">What can you do?</h2>
+
+          <!-- Icon Divider -->
+          <div class="divider-custom">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon">
+                  <i class="fas fa-star"></i>
+              </div>
+              <div class="divider-custom-line"></div>
+          </div>
+
+          <!-- Portfolio Grid Items -->
+          <div class="row">
+
+              <!-- Portfolio Item 1 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white">
+                              <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <h3 class="text-center text-secondary">Actions that matter</h3>
+                      <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 2 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white">
+                              <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <h3 class="text-center text-secondary">How renewables work</h3>
+                      <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 3 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white">
+                              <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <h3 class="text-center text-secondary">What if I rent?</h3>
+                      <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+                  </div>
+              </div>
+          </div>
+          <!-- /.row -->
+
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+      <div class="container">
+          <div class="row">
+
+              <!-- Footer Social Icons -->
+              <div class="col-lg-6 mb-8 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Contact Us</h4>
+                  <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto:james@bee.energy">
+                      <i class="fab fa-fw fa-dribbble"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.facebook.com/BeeEnergyHive">
+                      <i class="fab fa-fw fa-facebook-f"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://twitter.com/beeenergyhive">
+                      <i class="fab fa-fw fa-twitter"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.linkedin.com/company/bee-energy">
+                      <i class="fab fa-fw fa-linkedin-in"></i>
+                  </a>
+              </div>
+
+              <div class="col-lg-6">
+                  <h4 class="text-uppercase mb-4">Location</h4>
+                  <p class="lead mb-0">Level 7, 11 York Street
+                      <br>Sydney, 2000, NSW, Australia</p>
+              </div>
+
+              <div>
+              <br/><br/><br/>
+              <p/><p/><p/>
+              <br/><br/><br/>
+              <p/><p/><p/>
+              <br/><br/><br/>
+              <p/><p/><p/>
+              </div>
+
+          </div>
+      </div>
+  </footer>
 
   <section class="bg-secondary text-uppercase fixed-bottom text-white text-center" id="signupNav">
       <div class="container d-flex align-items-center flex-column">
@@ -168,6 +244,162 @@
       </div>
   </section>
 
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+              </button>
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title -->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Actions that matter</h2>
+                              <!-- Icon Divider -->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon">
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Text -->
+                              <p class="mb-5">
+                              <p>Did you know that electricity usage and personal transport are your two biggest contributors to global warming? Unfortunately this has a direct effect on bees, reducing their ability to efficiently perform their main task: pollination… The good news is that you now have the opportunity to save the world, one Bee at a time!</p>
+
+                              <p>The way you consume energy at home can have a tremendous impact on fighting climate change. And switching your habits to take advantage of renewable electricity generation is an extremely effective way to reduce your footprint, from today. The good news is that by joining Bee.Energy and making simple changes to your behaviour you can also save money on your power bills. It’s the perfect win - win, for you and the planet!</p>
+
+                              <p>So, where should we start? The most simple way is to take advantage of the Sun when it’s shining. There will be much more green power on the grid, and you will directly benefit from it. Instead of running your laundry in the evening, simply stat it when you leave for work in the morning. That way you’ll minimise burning coal to clean your clothes (yuk!), and you’ll save money benefiting from the lower cost of energy.</p>
+
+                              <p>We’re now at a tipping point where renewable sources are cheaper than the dirty old fossil fuels. This will facilitate the transition to a wider adoption of clean energy sources to power your home and appliances, and you can easily take part of the transition. Honestly, if you start changing others will too, and we will all, as a Society, contribute to fight climate change. So how about changing for good from today?</p>
+
+                              <p>We’re just launching our startup journey, and by providing you with real time energy data, we give you transparency on when is the best time to use electricity.</p>
+
+                              <p>Stay tuned by signing up to the Bee.Energy waitlist today!</p>
+
+                                  Greg and the Bee Team
+                              </p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                  <i class="fas fa-times fa-fw"></i>
+                                  Close Article
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+              </button>
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title -->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">How renewables work on the electricity grid</h2>
+                              <!-- Icon Divider -->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon">
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Text -->
+                              <p class="mb-5">
+                              <p>Ever wondered how renewable energy generators operate on the grid and ultimately provide you with clean power? It can be very confusing given the lack of information offered and the structure of schemes like GreenPower that imply you can use 100% renewable energy.</p>
+
+                              <p>Let’s dig into it a bit: electricity generators are the power plants producing electricity, which can use renewable or fossil sources. They are connected to the grid 24/7. As demand and supply vary, the price of power on the grid also varies, like a stock exchange. This variation in price is what motivates generators to increase or reduce their power output. Unfortunately, renewable energy generators are unable to regulate their power output as they depend on natural elements (when the sun is shining or the wind is blowing). This means that the stabilisation of the grid predominantly comes from fossil fuel generators.</p>
+
+                              <p>On average, renewable energy makes up around 15% of the power consumed in NSW. However, during peak times this can be below 10%; and on low demand periods, during the day mostly, it can be up around 20%. No matter what your power plan is, in NSW, you’re only ever using around 15% renewable energy, although this number is growing with more renewable energy plants being built.</p>
+
+                              <p>The good news is that you can modify your behaviour to take advantage of periods of high renewable energy generation. The Bee.Energy site shows Green during these times and Red during periods of low renewable generation. If you can move some of your power consumption from the red periods into the green periods, you can reduce the carbon emissions associated with those activities by up to 10%,  and that’s really significant for our planet!</p>
+
+                              <p>We hope this gives you a better understanding of how you can utilise renewable energy?
+                              If you have any questions, don’t hesitate to contact us, we’d love to get your feedback and help you consume better!</p>
+
+                              <p>To keep updated, sign up to the Bee.Energy waitlist today!</p>
+                                  James and the Bee Team
+
+                              </p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                  <i class="fas fa-times fa-fw"></i>
+                                  Close Article
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+              </button>
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title -->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">What if I rent?</h2>
+                              <!-- Icon Divider -->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon">
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Text -->
+                              <p class="mb-5">
+                              <p>When you rent the home you live in, it might be hard to reduce the carbon emissions related to your power use (unless you ask your landlord to install solar panels…). Even those that can control their power plan and purchase GreenPower might be surprised to know that this doesn’t mean they’re using 100% green energy (reasons for this are given in the “How renewables work on the electricity grid” article).</p>
+
+                              <p>The good news is that you can reduce your carbon emissions meaningfully by changing when you consume power! The Bee.Energy website will be showing green when renewable energy generation is high and red when it’s low. Moving energy consumption from the red times to the green times can reduce your carbon emissions by up to 10%!</p>
+
+                              <p>To put this into perspective, here are some interesting facts:</p>
+
+                              <ul>
+                                  <li>If everyone in NSW always ran their washing machines in the green period, it could save 3.9 million tonnes of CO2 per year, the equivalent of taking 164 cars off the road!</li>
+                                  <li>The figures are similar for dishwashers. The same as planting 3.9 million trees!</li>
+                                  <li>Turning off reverse cycle air conditioners for an hour during the red periods also has a similar effect. Saving 68 return flights to London!</li>
+                              </ul>
+
+                              <p>Sign up to Bee.Energy today and start tracking your impact!</p>
+                                  James and the Bee Team
+                              </p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                  <i class="fas fa-times fa-fw"></i>
+                                  Close Article
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
