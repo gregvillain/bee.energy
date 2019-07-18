@@ -11,7 +11,7 @@
 
         //James change here:
           let percent = 8;
-           $("#energy-msg1").text("Grid is at " + percent + "% renewables");
+           $("#energy-msg1").text(+ percent + "% renewables right now");
           if(percent < 10) {
                 $("#energy-msg2").text("Postpone power usage if possible");
                 $("#background").removeClass("bg-primary");
@@ -36,7 +36,7 @@
                 $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
-          //$("#price").text("Current energy price is " + price + " cents per kWh.");
+          $("#price").text("Current energy price is " + price + " cents per kWh.");
       });
     });
 
