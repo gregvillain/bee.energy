@@ -8,16 +8,18 @@
           let price = Math.round(json.spotPrice/10);
           const d = new Date();
           const imgNo = Math.round(100*Math.random()) % 2;
-          if(Number(json.spotPrice) > 90.0) {
-                $("#energy-msg1").text("Coal is burning!");
-                $("#energy-msg2").text("Please postpone.");
+
+        //James change here:
+          let percent = 8;
+           $("#energy-msg1").text("Grid is at " + percent + "% renewables");
+          if(percent < 10) {
+                $("#energy-msg2").text("Postpone power usage if possible");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
                 $("#background1").removeClass("bg-primary");
                 $("#background1").addClass("bg-danger");
                 $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
           } else {
-                let t = "Renewables going strong!";
                 let r = [
                     "Roast that chicken!",
                     "Grill the veggies!",
@@ -27,7 +29,6 @@
                     "Make a cuppa!",
                     "Vacuum the carpet!"];
                 let rMsg = r[Math.round(100*Math.random()) % r.length];
-                $("#energy-msg1").text(t);
                 $("#energy-msg2").text(rMsg);
                 $("#background").addClass("bg-primary");
                 $("#background").removeClass("bg-danger");
@@ -35,7 +36,7 @@
                 $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
-          $("#price").text("Current energy price is " + price + " cents per kWh.");
+          //$("#price").text("Current energy price is " + price + " cents per kWh.");
       });
     });
 
