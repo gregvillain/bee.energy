@@ -10,7 +10,7 @@
           const imgNo = Math.round(100*Math.random()) % 2;
 
         //James change here:
-          let percent = 9;
+          let percent = 12;
            $("#energy-msg1").text(+ percent + "% renewables right now");
           if(percent < 10) {
                 $("#energy-msg2").text("Postpone heavy power usage if possible");
