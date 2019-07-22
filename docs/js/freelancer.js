@@ -1,8 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
-    setInterval(function() {
-     fetch("https://data.opennem.org.au/power/nsw1.json")
+  function update() {
+       fetch("https://data.opennem.org.au/power/nsw1.json")
       .then(function(response) {
         return response.json();
       })
@@ -68,7 +68,12 @@
                           $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
                     }
                     $("#price").text("Current energy price is " + price + " cents per kWh.");
-      });
+      });  
+  };
+  
+  update();
+    setInterval(function() {
+    update();
   }, 300000);
 
 //  fetch('https://api.bee.energy:8000/current')
