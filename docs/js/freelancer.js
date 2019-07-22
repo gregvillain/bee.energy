@@ -56,7 +56,7 @@
                               "Grill the veggies!",
                               "Do your laundry!",
                               "Iron your shirts!",
-                              "Dry your clothes!",
+                              "Tumble dry your clothes!",
                               "Make a cuppa!",
                               "Vacuum the carpet!"];
                           let rMsg = r[Math.round(100*Math.random()) % r.length];
