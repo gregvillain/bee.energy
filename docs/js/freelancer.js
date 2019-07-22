@@ -43,7 +43,7 @@
                     const imgNo = Math.round(100*Math.random()) % 2;
 
                      $("#energy-msg1").text(+ percent + "% renewables right now");
-                    if(percent < 10) {
+                    if(percent < 14) {
                           $("#energy-msg2").text("Postpone heavy power usage if possible");
                           $("#background").removeClass("bg-primary");
                           $("#background").addClass("bg-danger");
