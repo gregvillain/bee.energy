@@ -39,8 +39,12 @@
           const renewable_proportion = renewables/total;
           const percent = Math.round(renewable_proportion * 100);
           // const price = Math.round(x[11].history.data[x[11].history.data.length-1]/10);
+         
+          // Ideally we can calculate the below numbers in some way!?!?
           const avg_renewable_proportion = 0.15;
           const avg_price = 0.07;
+         
+          // Indicative pricing model only...
           const price = Math.round(100*(avg_price - ((renewable_proportion - avg_renewable_proportion)/3)));
 
                     const d = new Date();
