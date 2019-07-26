@@ -70,7 +70,7 @@
                           $("#background1").removeClass("bg-danger");
                           $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
                     }
-                    $("#price").text("Current energy price is " + price + " cents per kWh.");
+                    $("#price").text("Bee.Energy base rate is " + price + " cents per kWh.");
       });  
   };
   
