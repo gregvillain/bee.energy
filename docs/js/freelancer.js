@@ -41,7 +41,7 @@
           // const price = Math.round(x[11].history.data[x[11].history.data.length-1]/10);
           const avg_renewable_proportion = 0.15;
           const avg_price = 0.07;
-          const price = avg_price - ((renewable_proportion - avg_renewable_proportion)/3);
+          const price = Math.round(avg_price - ((renewable_proportion - avg_renewable_proportion)/3));
 
                     const d = new Date();
                     const imgNo = Math.round(100*Math.random()) % 2;
