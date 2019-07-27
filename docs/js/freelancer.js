@@ -17,23 +17,22 @@
           const wind = x[7].history.data;
           const exports = x[8].history.data;
           const imports = x[9].history.data;
-          const rooftop_solar = x[10].forecast.data;
+          const rooftop_solar = x[10].history.data;
+          const demand = x[12].history.data
 
-          const black_coal_value = black_coal[black_coal.length-1];
-          const distillate_value = distillate[distillate.length-1];
-          const gas_ccgt_value = gas_ccgt[gas_ccgt.length-1];
-          const gas_ocgt_value = gas_ocgt[gas_ocgt.length-1];
-          const hydro_value = hydro[hydro.length-1];
-          const pumps_value = pumps[pumps.length-1];
-          const solar_value = solar[solar.length-1];
-          const wind_value = wind[wind.length-1];
-          const exports_value = exports[exports.length-1];
-          const imports_value = imports[imports.length-1];
-          const rooftop_solar_value = rooftop_solar[rooftop_solar.length-1];
+          const black_coal_value = black_coal[0];
+          const distillate_value = distillate[0];
+          const gas_ccgt_value = gas_ccgt[0];
+          const gas_ocgt_value = gas_ocgt[0];
+          const hydro_value = hydro[0];
+          const pumps_value = pumps[0];
+          const solar_value = solar[0];
+          const wind_value = wind[0];
+          const exports_value = exports[0];
+          const imports_value = imports[0];
+          const rooftop_solar_value = rooftop_solar[0];
 
-          const total = black_coal_value + distillate_value + gas_ccgt_value +
-                        gas_ocgt_value + hydro_value + pumps_value + solar_value +
-                        wind_value + rooftop_solar_value + imports_value;
+          const total = demand[0];
           const renewables = hydro_value + solar_value + wind_value + rooftop_solar_value;
            
           const renewable_proportion = renewables/total;
