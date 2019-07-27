@@ -33,7 +33,7 @@
 
           const total = black_coal_value + distillate_value + gas_ccgt_value +
                         gas_ocgt_value + hydro_value + pumps_value + solar_value +
-                        wind_value + rooftop_solar_value - imports_value;
+                        wind_value + rooftop_solar_value + imports_value;
           const renewables = hydro_value + solar_value + wind_value + rooftop_solar_value;
            
           const renewable_proportion = renewables/total;
