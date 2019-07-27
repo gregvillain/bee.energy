@@ -32,7 +32,7 @@
           const imports_value = imports[imports_value.length-1];
           const rooftop_solar_value = rooftop_solar[rooftop_solar_value.length-1];
 
-          const total = demand[0];
+          const total = demand[demand.length-1];
           const renewables = hydro_value + solar_value + wind_value + rooftop_solar_value;
            
           const renewable_proportion = renewables/total;
