@@ -17,7 +17,7 @@
           const wind = x[7].history.data;
           const exports = x[8].history.data;
           const imports = x[9].history.data;
-          const rooftop_solar = x[10].history.data;
+          const rooftop_solar = x[10].forecast.data;
           const demand = x[12].history.data
 
           const black_coal_value = black_coal[black_coal.length-1];
@@ -30,7 +30,7 @@
           const wind_value = wind[wind.length-1];
           const exports_value = exports[exports.length-1];
           const imports_value = imports[imports.length-1];
-          const rooftop_solar_value = rooftop_solar[rooftop_solar.length-1];
+          const rooftop_solar_value = rooftop_solar[rooftop_solar.length-2];
 
           const total = demand[demand.length-1];
           const renewables = hydro_value + solar_value + wind_value + rooftop_solar_value;
