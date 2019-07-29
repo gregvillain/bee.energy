@@ -1,95 +1,46 @@
 (function($) {
   "use strict"; // Start of use strict
 
-function getData(url = '') {
-  // Default options are marked with *
-    return fetch(url, {
-        method: 'GET', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, cors, *same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, *same-origin, omit
-        headers: {
-            'Content-Type': 'application/json',
-            'IFTTT-Channel-Key': 'bee.energy'
-        },
-        redirect: 'follow', // manual, *follow, error
-        referrer: 'no-referrer', // no-referrer, *client
-        //body: JSON.stringify(data), // body data type must match "Content-Type" header
-    })
-    .then(response => response.json()); // parses JSON response into native JavaScript objects
-}
-
   function update() {
-       getData("https://data.opennem.org.au/power/nsw1.json")
+       fetch("https://api.bee.energy:8080/ifttt/v1/ping",
+       {headers: {'IFTTT-Channel-Key':'bee.energy'}})
+      .then(function(response) {
+        return response.json();
+      })
       .then(function(x) {
-          const black_coal = x[0].history.data;
-          const distillate = x[1].history.data;
-          const gas_ccgt = x[2].history.data;
-          const gas_ocgt = x[3].history.data;
-          const hydro = x[4].history.data;
-          const pumps = x[5].history.data;
-          const solar = x[6].history.data;
-          const wind = x[7].history.data;
-          const exports = x[8].history.data;
-          const imports = x[9].history.data;
-          const rooftop_solar = x[10].forecast.data;
-          const demand = x[12].history.data
 
-          const black_coal_value = black_coal[black_coal.length-1];
-          const distillate_value = distillate[distillate.length-1];
-          const gas_ccgt_value = gas_ccgt[gas_ccgt.length-1];
-          const gas_ocgt_value = gas_ocgt[gas_ocgt.length-1];
-          const hydro_value = hydro[hydro.length-1];
-          const pumps_value = pumps[pumps.length-1];
-          const solar_value = solar[solar.length-1];
-          const wind_value = wind[wind.length-1];
-          const exports_value = exports[exports.length-1];
-          const imports_value = imports[imports.length-1];
-          const rooftop_solar_value = rooftop_solar[rooftop_solar.length-2];
+          const percent = x.currentRate;
+          const price = x.currentPrice;
 
-          const total = demand[demand.length-1];
-          const renewables = hydro_value + solar_value + wind_value + rooftop_solar_value;
-           
-          const renewable_proportion = renewables/total;
-          const percent = Math.round(renewable_proportion * 100);
-          // const price = Math.round(x[11].history.data[x[11].history.data.length-1]/10);
-         
-          // Ideally we can calculate the below numbers in some way!?!?
-          const avg_renewable_proportion = 0.15;
-          const avg_price = 0.07;
-         
-          // Indicative pricing model only...
-          const price = Math.round(100*(avg_price - ((renewable_proportion - avg_renewable_proportion)/3)));
+          const d = new Date();
+          const imgNo = Math.round(100*Math.random()) % 2;
 
-                    const d = new Date();
-                    const imgNo = Math.round(100*Math.random()) % 2;
-
-                     $("#energy-msg1").text(+ percent + "% renewables right now");
-                    if(percent < 14) {
-                          $("#energy-msg2").text("Postpone heavy power usage");
-                          $("#background").removeClass("bg-primary");
-                          $("#background").addClass("bg-danger");
-                          $("#background1").removeClass("bg-primary");
-                          $("#background1").addClass("bg-danger");
-                          $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
-                    } else {
-                          let r = [
-                              "Roast that chicken!",
-                              "Grill the veggies!",
-                              "Do your laundry!",
-                              "Iron your shirts!",
-                              "Tumble dry your clothes!",
-                              "Make a cuppa!",
-                              "Vacuum the carpet!"];
-                          let rMsg = r[Math.round(100*Math.random()) % r.length];
-                          $("#energy-msg2").text(rMsg);
-                          $("#background").addClass("bg-primary");
-                          $("#background").removeClass("bg-danger");
-                          $("#background1").addClass("bg-primary");
-                          $("#background1").removeClass("bg-danger");
-                          $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
-                    }
-                    $("#price").text("Bee.Energy base rate is " + price + " cents per kWh.");
+           $("#energy-msg1").text(+ percent + "% renewables right now");
+          if(percent < 14) {
+                $("#energy-msg2").text("Postpone heavy power usage if possible");
+                $("#background").removeClass("bg-primary");
+                $("#background").addClass("bg-danger");
+                $("#background1").removeClass("bg-primary");
+                $("#background1").addClass("bg-danger");
+                $("#avatar").attr("src","img/scared-" + imgNo + ".svg");
+          } else {
+                let r = [
+                    "Roast that chicken!",
+                    "Grill the veggies!",
+                    "Do your laundry!",
+                    "Iron your shirts!",
+                    "Tumble dry your clothes!",
+                    "Make a cuppa!",
+                    "Vacuum the carpet!"];
+                let rMsg = r[Math.round(100*Math.random()) % r.length];
+                $("#energy-msg2").text(rMsg);
+                $("#background").addClass("bg-primary");
+                $("#background").removeClass("bg-danger");
+                $("#background1").addClass("bg-primary");
+                $("#background1").removeClass("bg-danger");
+                $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
+          }
+          $("#price").text("Current energy price is " + price + " cents per kWh.");
       });  
   };
   
