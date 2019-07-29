@@ -21,9 +21,6 @@ function getData(url = '') {
 
   function update() {
        getData("https://data.opennem.org.au/power/nsw1.json")
-      .then(function(response) {
-        return response.json();
-      })
       .then(function(x) {
           const black_coal = x[0].history.data;
           const distillate = x[1].history.data;
