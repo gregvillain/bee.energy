@@ -11,6 +11,14 @@
 
           const percent = x.currentRate;
           const price = x.currentPrice;
+         
+          // Ideally we can calculate the below numbers in some way!?!?
+          const avg_renewable_proportion = 0.15;
+          const avg_price = 0.07;
+          const fixed_electricity_costs = 16; // Cents
+
+          // Indicative pricing model only...
+          const bee_price = fixed_electricity_costs + Math.round(100*(avg_price - (((percent/100) - avg_renewable_proportion)/3)));
 
           const d = new Date();
           const imgNo = Math.round(100*Math.random()) % 2;
@@ -40,7 +48,7 @@
                 $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
-          $("#price").text("Current energy price is " + price + " cents per kWh.");
+          $("#price").text("Bee.Eenergy price is " + price + " cents per kWh.");
       });  
   };
   
