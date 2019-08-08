@@ -48,7 +48,7 @@
                 $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
-          $("#price").text("Bee.Eenergy price is " + price + " cents per kWh.");
+          $("#price").text("Bee.Energy price is " + bee_price + " cents per kWh.");
       });  
   };
   
