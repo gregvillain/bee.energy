@@ -48,7 +48,7 @@
                 $("#background1").removeClass("bg-danger");
                 $("#avatar").attr("src","img/happy-" + imgNo + ".svg");
           }
-          $("#price").text("Current NEM price is " + price + " cents per kWh.");
+          $("#price").text("Current spot price is " + price + " cents per kWh.");
       });  
   };
   
