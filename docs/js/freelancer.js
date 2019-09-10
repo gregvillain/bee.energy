@@ -25,7 +25,7 @@
 
            $("#energy-msg1").text(+ percent + "% renewables right now.");
           if(percent < 14) {
-                $("#energy-msg2").text("Postpone heavy power usage if possible");
+                $("#energy-msg2").text("Postpone heavy power usage if possible...");
                 $("#background").removeClass("bg-primary");
                 $("#background").addClass("bg-danger");
                 $("#background1").removeClass("bg-primary");
